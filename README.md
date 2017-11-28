@@ -24,20 +24,20 @@ _lbViewPicture_Y.scrollType = UICollectionViewScrollDirectionVertical;
 ## 需要实现的代理：
 在这个代理中，可以直接设置cell的显示图片
 
->//cell内容设置
+>cell内容设置
 - (void)lbView:(NHLBView *)lbView setCell:(UICollectionViewCell *)cell withIndexPath:(NSInteger)indexPath{
 
 显示的页数
->//页数
+>页数
 - (NSInteger)numberOfCellInEveryCollectionView{
     return 5;
 }
 轮播的间隔
->//间隔时间
+>间隔时间
 - (NSInteger)returnPageControlScrollTime{
 
 点击图片响应
->//点击响应
+>点击响应
 - (void)didSelectItemAtIndexPath:(NSInteger)indexPath{
 
 ### 结构还是很简单的，稍后详细分析设计思路和改进一下
